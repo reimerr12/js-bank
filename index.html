@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banking calculator</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="bg-yellow-300">
+    <div class="ml-4">
+        <h1 class="container my-4 mx-4 p-4 text-center capitalize bg-green-400 text-white  rounded-xl font-bold text-2xl">simple banking</h1>
+    </div>
+    <div id="dashboard" class="container m-4 p-4">
+        <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-10 m-4 p-4">
+            <div class="border-green-400 p-4 rounded-lg shadow-sm shadow-green-500 bg-green-400 transform hover:scale-105 duration-100">
+                <h2 class="font-semibold text-white">Deposit</h2>
+                <p class="font-semibold text-white">
+                    <span id="Deposit" class="text-2xl">0</span> Taka
+                </p>
+            </div>
+
+            <div class="border-green-400 p-4 rounded-lg shadow-sm shadow-green-500 bg-green-400 transform hover:scale-105 duration-100">
+                <h2 class="font-semibold text-white">Withdraw</h2>
+                <p class="font-semibold text-white">
+                    <span id="Withdraw" class="text-2xl">0</span> Taka
+                </p>
+            </div>
+
+            <div class="border-green-400 p-4 rounded-lg shadow-sm shadow-green-500 bg-green-400 transform hover:scale-105 duration-100">
+                <h2 class="font-semibold text-white">Balance</h2>
+                <p class="font-semibold text-white">
+                    <span id="Balance" class="text-2xl">1200</span> Taka
+                </p>
+            </div>
+        </div>
+
+        <div id="inputSection" class="flex justify-around items-center flex-wrap">
+            <div class="border-green-400 p-4 rounded-lg shadow-sm shadow-green-500 bg-green-400">
+                <h3 class="font-semibold text-white">Deposit amount</h3>
+                <input type="number" class="rounded-md border-yellow-400 outline-none px-2" id="depositInput" placeholder="deposit">
+                <br>
+                <button class="mt-2 py-2 px-4 bg-yellow-200 text-black rounded-lg hover:bg-yellow-300 duration-100 ease-linear" id="depositBtn">Deposit</button>
+            </div>
+            <div class="border-green-400 p-4 rounded-lg shadow-sm shadow-green-500 bg-green-400">
+                <h3 class="font-semibold text-white">Withdraw amount</h3>
+                <input type="number" class="rounded-md border-yellow-400 outline-none px-2" id="withdrawInput" placeholder="withdraw">
+                <br>
+                <button class="mt-2 py-2 px-4 bg-yellow-200 text-black rounded-lg hover:bg-yellow-300 duration-100 ease-linear" id="withdrawBtn">Withdraw</button>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    
+   <script src="script.js"></script>
+</body>
+</html>
